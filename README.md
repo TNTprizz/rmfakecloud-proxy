@@ -5,9 +5,21 @@ Single-minded HTTPS reverse proxy
 
 ## Installation
 
+Do this on your tablet first: 
+```bash
+opkg install rmfakecloud-proxy
+```
 
+Replace `/opt/bin/rmfakecloud-proxy` with `rmfakecloud-proxy-arm7` (remember to rename the thing)  
+
+Then, follow the guide [here](https://ddvk.github.io/rmfakecloud/remarkable/setup/).
+
+*Note: `rmfakecloudctl status` somehow shows `invalid`, but it works, so I won't touch it.*  
 
 ### Manual
+
+*Note: Might not work in this case as I amended the binary.*
+
 Download `installer-rm12.sh` for rm1/2 or `installer-rmpro.sh` on a pc.  
 Transfer to the tablet with `scp` / `WinSCP`  
 run installer on the tablet over ssh  
