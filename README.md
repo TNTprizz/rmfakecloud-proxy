@@ -1,5 +1,5 @@
 # rmfakecloud-proxy
-Single-minded HTTPS reverse proxy
+Single-minded HTTPS reverse proxy, but enables direct access to ngrok instead of the warning page.
 
 (forked from https://github.com/yi-jiayu/secure)
 
