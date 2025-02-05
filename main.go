@@ -138,9 +138,10 @@ func _main() error {
 		} else {
 			req.URL.RawQuery = upstreamQuery + "&" + req.URL.RawQuery
 		}
+		req.Header.Add("ngrok-skip-browser-warning", "114514")
 		if _, ok := req.Header["User-Agent"]; !ok {
 			// explicitly disable User-Agent so it's not set to default value
-			req.Header.Set("User-Agent", "")
+			req.Header.Add("User-Agent", "")
 		}
 	}
 
